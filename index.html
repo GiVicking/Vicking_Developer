@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css'>
@@ -21,13 +21,14 @@
 
 <nav>
   <img src="./Imagens/logo.png" alt="" class="logo hvr-grow">
-  <ul>
-    <li class="hvr-grow">Home</a></li>
-    <li class="hvr-grow">About</li>
-    <li class="hvr-grow">Process</li>
-    <li class="hvr-grow">Contact</li>
-  </ul>
-</nav>
+  <ul class="start-nav">
+    <li class="hvr-grow"><a href="#home">Home</a></li>
+    <li class="hvr-grow"><a href="#intro">About</a></li>
+    <li class="hvr-grow"><a href="#conhecimentos">skills</a></li>
+    <li class="hvr-grow"><a href="#resume">Resume</a></li>
+    <li class="hvr-grow"><a href="#projetos">Projetos</a></li>
+    <li class="hvr-grow"><a href="#contact">Contact</a></li>
+  </nav>
 
 <header class="header" id="home">
   <div class="hero-text animated fadeIn ">
@@ -44,7 +45,7 @@
 
 <hr data-aos="fade-up" data-duration="2000">
 <div class="container" data-aos="fade-up" data-aos-offset="200">
-  <div class="intro">
+  <div class="intro" id="intro">
     <p>Olá!! Sou Gislaine, desenvolvedora front-end autodidata, e curso graduação 
     em Análises e desenvoldimento de sistemas - 03ºsemestre.
     Design e desenvolvimento são minhas paixões, e tentar simplificar as tarefas diárias é o que me impulsiona todos os dias.
@@ -66,7 +67,7 @@
       <a href="https://www.instagram.com/gika.silva.360/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
     </div>
   </div> <!--End Social media-->
-<div class="skills">
+<div class="skills" id="conhecimentos">
       <div class="conhecimentos">
           <div class="conhecimento">
             <div class="conhecimento-header">
@@ -132,7 +133,7 @@
       <!---------------------------------->
   </div>
   
-  <div class="work">
+  <div class="work" id="resume">
     <img src="./Imagens/trabalhos.png" alt="Limipicos thumbnail" data-aos="fade-in" data-duration="2000" data-aos-duration="800">
     <div id="work" class="work-text" data-aos="zoom-in-left"
      data-aos-offset="400"
@@ -142,17 +143,17 @@
       <p>Possuo ampla experiência no setor administrativo o que me leva a ter conhecimentos prévios
         como excel avançado , apresentações em Power Point avançado, criação de DashBoards,e Power BI.  
         Possuo cursos de lógica da programação , HTML5, CSS3 , JavaScriptE6, React, Linux, PHP, e em constante aprendizagem na área tecnológica. 
-        Atualmente realizo trabalhos como elaboração de sites (wireframe ,técnicas de UX| UI e ténicas minimalistas)  outros trabalhos de Interface com usuários,
-         como identidade visual, flayers, convites , cartões de visitas entre outros...
+        Atualmente realizo trabalhos como elaboração de sites (wireframe ,técnicas de UX| UI e ténicas minimalistas),
+        e outros trabalhos de Interface com usuários, como identidade visual, flayers, convites , cartões de visitas entre outros...
         Utilizo algumas ferramentas como: Photoshop, Illustrator, InDesign, Gimp, Inskape ou Figma.
-        e no front end algumas bibliotecas CSS (Bootstrap, Materiallize). E JavaScript (JQuery).
+        e no front end algumas bibliotecas CSS (Sass, Bootstrap, Materiallize). E JavaScript (JQuery).
       </p>
     
       <div class="work-cta"><a href="./Imagens/curriculo.pdf" target="_blank">Currículo</a></div>
     </div>
   </div>
-
-  <div class="projects">
+<!--------------------------Section Projects----------------------------------------------------------->
+  <div class="projects" id="projetos">
     <div class="containerCards">
       <div class="cards">
         <a class="card" href="#">
@@ -289,7 +290,8 @@
     </div>
   </div>
 
-<footer class="footer">
+
+<footer class="footer" id="contact">
     <p>2022 &copy; Website creafted with
       <i class="fa fa-heart" aria-hidden="true"></i>
       by Gislaine.</p>
@@ -300,6 +302,14 @@
         <i class="fa fa-instagram" aria-hidden="true"></i>
   </footer>
 </div>
+
+<a href="#home" id="link-topo">
+  
+
+  <i class="material-icons">pan_tool_alt</i>
+            
+ 
+</a>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/typeit/4.3.0/typeit.min.js'></script>
